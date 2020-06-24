@@ -4,9 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+    <header>
+        <div class="main-nav">
+            <div>
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="pc-nav">
+                <nav>
+                    <a href="#">Hello</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Team</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="wrapper">
+                <div class="mobile-navigation">
+                    <a href="#" class="navigation-item">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="menu">
+                    <nav class="menu-list">
+                        <a href="#">Hello.</a>
+                        <a href="#">About.</a>
+                        <a href="#">Services.</a>
+                        <a href="#">Portfolio.</a>
+                        <a href="#">Team.</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="text">
+                <div>
+                    <h1>Get the most fun
+                    weather app.</h1>
+                </div>
+                <div>
+                    <p>Simple, nice and user-friendly application of the weather.</p> 
+                    <p>Only usefull information.</p>
+                </div>
+                <div>
+                    <button>Download</button><button>Features</button>
+                </div>
+            </div>
+            <div>
+                <img src="./img/phone.png" alt="phone">
+            </div>
+            <div class="watermark">
+                <p>Работу выполнил студент группы №115 Корольков Даниил &copy</p>
+            </div>  
+        </div>
+    </header>
+
+    <section class="main-features">
+        <div>
+            <div class="center">
+                <h1>Perfect Features</h1>
+                <span>Only necessary</span>
+            </div>
+
+            <div class="features">
+
+                <div class="features-items">
+                    <div>
+                        <img src="./img/diamond.png" alt="diamond">
+                    </div>
+                    <div>
+                        <h3>Usability</h3>
+                        <p>Sometimes the simplest things are</p>
+                        <p>the hardest to find. So we created a</p> 
+                        <p>new line for everyday life.</p>
+                    </div>
+                </div>
+
+                <div class="features-items">
+                    <div>
+                        <img src="./img/water.png" alt="water">
+                    </div>
+                    <div>
+                        <h3>Usability</h3>
+                        <p>Sometimes the simplest things are</p>
+                        <p>the hardest to find. So we created a</p> 
+                        <p>new line for everyday life.</p>
+                    </div>
+                </div>
+
+                <div class="features-items">
+                    <div>
+                        <div>
+                            <img src="./img/layers.png" alt="layers">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Usability</h3>
+                        <p>Sometimes the simplest things are</p>
+                        <p>the hardest to find. So we created a</p> 
+                        <p>new line for everyday life.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     
+    <section>
+        <div class="widgets">
+            <div class="center">
+                <h1>Simple widgets</h1>
+                <span>Drag and Drop</span>
+            </div>
+            <div>
+                <img src="./img/widgets.png" alt="widgets">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-1">
+        <div class="stores">
+            <div>
+                <h1>How Download the app?</h1>
+            </div>
+            <div>
+                <p>Just download the app from the store.</p>
+                <p>nice and user-friendly application of</p>
+                <p>theweather. Only relevant and useful information.</p>
+            </div>
+            <div>
+                <a href="#"><img src="./img/google-play.png" alt="google-play"></a>
+            </div>
+        </div>
+        <div class="mobile">
+            <img src="./img/mobile-with-orange.png" alt="mobile">
+        </div>
+    </footer>
+
+    <footer class="footer-2">
+        <div class="items">
+            <div class="footer-content">
+                <div>
+                    <img src="./img/footer-logo.png" alt="footer-logo">
+                </div>
+                <nav>
+                    <a href="#">Hello</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                </nav>
+            </div>
+            <div>
+                <a href="#"><img src="./img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="./img/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        "use strict";
+
+        $('.navigation-item').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('navigation-item-active');
+        $('.menu').toggleClass('menu-active');
+        });
+    </script>
 </body>
 </html>
